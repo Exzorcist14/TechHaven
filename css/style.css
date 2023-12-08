@@ -474,6 +474,14 @@ img {
     border-width: 10px;
     border-radius: 25px;
     max-width: 100%;
+
+    transition: all 0.5s;
+}
+
+.it-sidebar img:hover {
+    cursor: pointer;
+
+    transform: scale(1.025);
 }
 
 /*-----------------------------------------------------------*/
