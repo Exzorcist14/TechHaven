@@ -1,0 +1,41 @@
+.form {
+    background-color: #edeff0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+input::placeholder {
+    color: #525252;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+input:focus{
+    color: #1ea0a0;
+}
+
+input {
+    color: white;
+    font-family: 'Akaya Kanadaka', cursive;
+    border-style:ridge;
+    border-color: #111111;
+    background-color: #7e7e7e;
+    margin: 1ex;
+    padding: 2ch;
+}
+
+button {
+    color: white;
+    font-family: 'Akaya Kanadaka', cursive;
+    border-style:ridge;
+    border-color: #111111;
+    background-color: #7e7e7e;
+    margin: 1vh;
+    padding: 1vh;
+}

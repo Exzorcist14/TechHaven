@@ -1,0 +1,212 @@
+/*-----------------------------------------------------------*/
+
+.catalog, .filtered-catalog {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+
+    gap: 15px;
+}
+
+.catalog-item {
+    background: #727272;
+    width: 100%;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-areas:
+    "img name purchase"
+    "img specifications purchase";
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: auto 6fr 1fr;
+    gap: 15px;
+
+    align-items: center;
+    justify-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.catalog-item img {
+    padding-left: 15px;
+
+    grid-area: img;
+}
+
+.catalog-item .name {
+    grid-area: name;
+
+    background: #4f4f4f;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
+.catalog-item .specifications {
+    grid-area: specifications;
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.catalog-item .purchase {
+    grid-area: purchase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.purchase button, .catalog-type button {
+    background: #565656;
+    color: #dedede;
+    font-family: 'Droid Sans Mono', cursive;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+.purchase button:hover, .catalog-type button:hover {
+    background: #939393;
+}
+
+/*-----------------------------------------------------------*/
+
+.sort button {
+    background: #727272;
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+    transition: 0.25s;
+}
+
+.sort button:hover {
+    background: #949494;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control .form button {
+    background: #565656;
+    color: #dedede;
+    font-family: 'Droid Sans Mono', cursive;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+.control .form button:hover {
+    background: #868686;
+}
+
+/*-----------------------------------------------------------*/
+
+.catalog-type {
+    display: flex;
+    gap: 15px;
+    flex: 1 1 0px;
+}
+
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1 1 0px;
+}
+
+/*-----------------------------------------------------------*/
+
+#filterForm input[type="number"] {
+    background-color: #4f4f4f;
+    border: 1px solid #727272;
+    border-radius: 8px;
+    color: #dedede;
+    padding: 8px;
+    margin: 5px;
+}
+
+#filterForm button {
+    background: #565656;
+    color: #dedede;
+    font-family: 'Droid Sans Mono', cursive;
+    padding: 12px 27px 12px 27px;
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+#filterForm button:hover {
+    background: #868686;
+}
+
+/*-----------------------------------------------------------*/
+
+.form {
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 1120px) {
+   .control {
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+
+       gap: 10px;
+   }
+}
+
+@media screen and (max-width: 728px) {
+    .catalog-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog-item .name {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .catalog-item .specifications {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-item .specifications p {
+        margin: 0;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+    }
+
+    .form button {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .catalog-type {
+        flex-direction: column;
+    }
+}

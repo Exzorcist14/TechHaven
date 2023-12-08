@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+main img {
+    border-radius: 25px;
+}
+
+h3 {
+    background: #464646;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+/*-----------------------------------------------------------*/
+
+section img {
+    margin-top: 25px;
+    float: right;
+}
+
+.float-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.float-center img {
+    margin: 0;
+    float: none;
+}
+
+.float-left {
+    margin-right: 25px;
+    float: left;
+}
+
+.float-right {
+    margin-left: 25px;
+    float: right;
+}
+
+/*-----------------------------------------------------------*/
+
+.btn {
+    font-size: 20px;
+    padding: 6px 28px;
+    color: #989393;
+    position: relative;
+    background: var(--body-color);
+    box-shadow: inset 0px 0px 12px rgba(73, 83, 64, 0.25);
+    border-radius: 24px;
+    font-family: 'Akaya Kanadaka', cursive;
+    cursor: pointer;
+}
+
+.fa-heart:before {
+    content: "\f004";
+}
+
+/*-----------------------------------------------------------*/
+
+@media screen and (max-width: 1250px) {
+    .float-right {
+        margin: 0;
+        float: none;
+    }
+}

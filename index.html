@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>TechHaven</title>
+    <link rel="icon" type="image/png" href="img/logo/ComputerFavicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/sidebar.js"></script>
+    <script src="https://kit.fontawesome.com/563ce4d2d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-grid">
+    <div class="it-header">
+        <header>
+            <div class="logo">
+                <img src="img/logo/ComputerLogo.png" alt="Логотип сайта" width="50" height="50">
+                <h1 id="Topic1" align="left">  <b id="content">TechHaven</b> </h1>
+            </div>
+
+            <div class="head">
+                <div class="notifications-container">
+                    <input type="checkbox" id="notifications-list" class = toggle>
+                    <label for="notifications-list" class="round-button">
+                        <img src="img/auxiliary/NotificationsLogo.png" width="45" height="45">
+                    </label>
+
+                    <div class="notifications-list">
+                        <div class="notifications-item">
+                            Вышла новая запись в блоге TechHaven
+                        </div>
+
+                        <div class="notifications-item">
+                            Сотрудники TechHaven протестировали новую сборку на GeForce RTX 4090 и Intel Core i9 13900K
+                        </div>
+
+                        <div class="notifications-item">
+                            В каталоге пополнение, не забудьте заглянуть!
+                        </div>
+
+                        <div class="notifications-item">
+                            Внимание! Сайт будет отключён 12.12.2023 в связи с техническим обслуживанием, но вскоре вновь заработает
+                        </div>
+                    </div>
+
+                    <div class="notifications-number">4</div>
+
+                    <script src="js/notifications.js"></script>
+                </div>
+
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                <nav>
+                    <a href="index.html" >Главная</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="assemblies.html">Сборки</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="gallery.html">Галерея</a>
+                    <a href="cart.html">Магазин</a>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="it-main">
+            <main>
+                <section>
+                    <h2 align="center">Введение</h2>
+
+                    <div>
+                        <p>
+                            В современном мире компьютеры стали неотъемлемой частью нашей повседневной жизни.
+                            Они помогают нам решать задачи, развлекаться, общаться и совершать множество других важных дел.
+                            Однако, чтобы компьютер работал на высшем уровне производительности и обеспечивал надежность,
+                            необходимы правильно подобранные комплектующие.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/PC4.jpg" alt="Комплектующие" width="600" height="300">
+                    </div>
+
+                    <p> Кратко рассмотрим некоторые из компьютерных комплектующих: </p>
+                    <ul>
+                        <li>Процессор (CPU - Central Processing Unit): Это "мозг" компьютера, который выполняет все вычисления и обработку данных. Процессоры имеют разную производительность и количество ядер, что влияет на скорость выполнения задач.</li>
+                        <li>Материнская плата (Motherboard): Это главная плата, на которой установлены остальные компоненты. Она обеспечивает связь между ними и имеет разъемы для процессора, оперативной памяти, видеокарты и других устройств.</li>
+                        <li>Оперативная память (RAM - Random Access Memory): RAM хранит данные, с которыми компьютер в настоящий момент работает. Большой объем оперативной памяти позволяет запускать больше программ и улучшает производительность.</li>
+                        <li>Видеокарта (GPU - Graphics Processing Unit): Видеокарта отвечает за отображение изображения на мониторе. Она также используется для обработки графики и ускорения выполнения определенных задач, таких как игры и видеомонтаж.</li>
+                        <li>Жесткий диск (HDD - Hard Disk Drive) или SSD (Solid State Drive): Жесткий диск используется для долгосрочного хранения данных, включая операционную систему и файлы. SSD более быстрые и надежные, чем HDD, но могут быть дороже.</li>
+                        <li>Блок питания (Power Supply Unit - PSU): Это устройство обеспечивает энергией все компоненты компьютера. Его мощность должна соответствовать потребности всех установленных устройств.</li>
+                        <li>Корпус (Case): Корпус компьютера служит для защиты компонентов и обеспечивает их охлаждение. В него встроены вентиляторы и места для установки комплектующих.</li>
+                        <li>Оптический привод (CD/DVD/Blu-ray): Этот компонент используется для чтения и записи оптических дисков.</li>
+                    </ul>
+
+                    <div class="large" id="about_line_card_holder">
+                        <div class="about_card_holder">
+                            <div class="info_card">
+                                <img src="img/cards/Gaming.jpg">
+                                <div class="card_content">
+                                    <p>Гейминг</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_card_holder">
+                            <div class="info_card">
+                                <img src="img/cards/3D.jpg">
+                                <div class="card_content">
+                                    <p>3D-моделирование</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_card_holder">
+                            <div class="info_card">
+                                <img src="img/cards/DataScience.jpg">
+                                <div class="card_content">
+                                    <p>Data Science</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Под каждую из этих сфер могут быть подобраны свои, наиболее оптимальные по производительности в своей сфере комплектующие.</p>
+                </section>
+
+                <section>
+                    <h2 align="center">Графический процессор (GPU)</h2>
+
+                    <p>
+                        Графический процессор (GPU) представляет собой высокопроизводительное устройство, специализированное для обработки графики и выполнения параллельных вычислений. Современные производители GPU включают NVIDIA, AMD и Intel. Давайте подробнее рассмотрим ключевые характеристики GPU и их применение в различных сферах.
+                    </p>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/RTX.jpg" auto="RTX" width="600" height="300">
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Характеристики </h3>
+
+                        <ol>
+                            <li>
+                                Архитектура:
+
+                                <ul>
+                                    <li>
+                                        NVIDIA: Например, архитектуры Pascal, Volta, Turing, Ampere.
+                                    </li>
+
+                                    <li>
+                                        AMD: Архитектуры GCN (Graphics Core Next) и RDNA (Radeon DNA).
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Количество ядер CUDA/Stream Processors:
+
+                                <ul>
+                                    <li>
+                                        Определяет количество параллельных вычислений, которые GPU может выполнять одновременно.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Частота GPU:
+
+                                <ul>
+                                    <li>
+                                        Высокая частота обеспечивает быстродействие GPU, но она не единственный фактор в обеспечении высокой производительности.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Объем видеопамяти (VRAM):
+
+                                <ul>
+                                    <li>
+                                        Влияет на возможность обработки больших объемов данных. Важен для графики высокого разрешения и сложных вычислений.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Шина памяти:
+
+                                <ul>
+                                    <li>
+                                        Ширина шины памяти влияет на пропускную способность и скорость обмена данными между GPU и VRAM.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Технологии и функции:
+
+                                <ul>
+                                    <li>
+                                        Ray Tracing: Обеспечивает реалистичное отслеживание лучей света в графике.
+                                    </li>
+
+                                    <li>
+                                        Tensor Cores: Предназначены для выполнения операций машинного обучения.
+                                    </li>
+
+                                    <li>
+                                        CUDA Cores (NVIDIA) / Stream Processors (AMD): Обрабатывают параллельные вычисления.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение GPU в различных сферах </h3>
+
+                        <ol>
+                            <li>
+                                Гейминг:
+
+                                <ul>
+                                    <li>
+                                        NVIDIA GeForce и AMD Radeon: Подходят для игр с высоким разрешением и требовательных графических эффектов.
+                                    </li>
+
+                                    <li>
+                                        Важные характеристики: Частота GPU, VRAM, поддержка технологий, таких как Ray Tracing и DLSS.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                3D-моделирование и рендеринг:
+
+                                <ul>
+                                    <li>
+                                        NVIDIA Quadro и AMD Radeon Pro: Оптимизированы для профессиональных приложений.
+                                    </li>
+
+                                    <li>
+                                        Важные характеристики: Количество ядер CUDA/Stream Processors, VRAM, точность цветопередачи.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Data Science и машинное обучение:
+
+                                <ul>
+                                    <li>
+                                        NVIDIA Tesla, NVIDIA A100: Используются для вычислений в области машинного обучения и научных исследований.
+                                    </li>
+
+                                    <li>
+                                        Важные характеристики: Tensor Cores, высокая производительность параллельных вычислений.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Компьютерное зрение и обработка изображений:
+
+                                <ul>
+                                    <li>
+                                        NVIDIA GeForce и AMD Radeon: Часто используются в применениях, связанных с обработкой изображений и распознаванием образов.
+                                    </li>
+
+                                    <li>
+                                        Выбор конкретного GPU зависит от бюджета, требований приложений и особенностей каждой сферы применения. При выборе стоит также обратить внимание на драйверы, поддержку API (например, DirectX, Vulkan, OpenGL) и общую экосистему производителя.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box nvidia">
+                            <span></span>
+                            <div class="content">
+                                <h2>Nvidia</h2>
+                                <a href="https://www.nvidia.com/ru-ru/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box amd">
+                            <span></span>
+                            <div class="content">
+                                <h2>AMD</h2>
+                                <a href="https://www.amd.com/en.html">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box intel">
+                            <span></span>
+                            <div class="content">
+                                <h2>Intel</h2>
+                                <a href="https://www.intel.com/content/www/us/en/support/ru-banner-inside.html">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 align="center">Центральный процессор (CPU)</h2>
+
+                    <p>
+                        Центральный процессор (CPU) представляет собой основной вычислительный компонент компьютера, ответственный за выполнение инструкций программы. В настоящее время основными производителями CPU являются Intel и AMD. Давайте рассмотрим основные характеристики и применение процессоров в различных областях.
+                    </p>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/INTEL.png" auto="INTEL" width="600" height="300">
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Характеристики </h3>
+
+                        <ol>
+                            <li>
+                                Архитектура:
+
+                                <ul>
+                                    <li>
+                                        Intel: Например, архитектуры Skylake, Kaby Lake, Comet Lake, Tiger Lake.
+                                    </li>
+
+                                    <li>
+                                        AMD: Например, архитектуры Zen, Zen+, Zen 2, Zen 3.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Количество ядер и потоков:
+
+                                <ul>
+                                    <li>
+                                        Определяет, сколько задач CPU может обрабатывать параллельно.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Частота CPU:
+
+                                <ul>
+                                    <li>
+                                        Высокая частота повышает быстродействие CPU, но также важны и другие характеристики.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Кэш-память:
+
+                                <ul>
+                                    <li>
+                                        Больший объем кэша улучшает быстродействие при работе с данными.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Технологии и функции:
+
+                                <ul>
+                                    <li>
+                                        Hyper-Threading (Intel) / Simultaneous Multithreading (SMT, AMD): Улучшает параллельную обработку задач.
+                                    </li>
+
+                                    <li>
+                                        Turbo Boost (Intel) / Precision Boost (AMD): Автоматическое увеличение частоты в зависимости от нагрузки.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение CPU в различных сферах </h3>
+
+                        <ol>
+                            <li>
+                                Общее использование:
+
+                                <ul>
+                                    <li>
+                                        Intel Core и AMD Ryzen: Подходят для повседневных задач, офисных приложений и интернет-серфинга.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Гейминг:
+
+                                <ul>
+                                    <li>
+                                        Intel Core i5/i7/i9 и AMD Ryzen 5/7: Обеспечивают высокую производительность в играх.
+                                    </li>
+
+                                    <li>
+                                        Важные характеристики: Количество ядер и потоков, частота CPU.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Профессиональные задачи:
+
+                                <ul>
+                                    <li>
+                                        Intel Core i7/i9, Intel Xeon и AMD Ryzen 7/9: Подходят для задач 3D-моделирования, рендеринга и обработки мультимедийного контента.
+                                    </li>
+
+                                    <li>
+                                        Важные характеристики: Количество ядер и потоков, кэш-память.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Серверные приложения:
+
+                                <ul>
+                                    <li>
+                                        Intel Xeon и AMD EPYC: Предназначены для высоконагруженных серверных сценариев.
+                                    </li>
+
+                                    <li>
+                                        Важные характеристики: Многоядерность, поддержка ECC-памяти.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box intel">
+                            <span></span>
+                            <div class="content">
+                                <h2>Intel</h2>
+                                <a href="https://www.intel.com/content/www/us/en/support/ru-banner-inside.html">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box amd">
+                            <span></span>
+                            <div class="content">
+                                <h2>AMD</h2>
+                                <a href="https://www.amd.com/en.html">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 align="center">Материнская плата</h2>
+
+                    <p>
+                        Материнская плата (матплата) является центральным компонентом, объединяющим все другие устройства в компьютере. Она предоставляет интерфейсы для подключения процессора, памяти, видеокарты, хранения данных и других периферийных устройств. В зависимости от потребностей и конфигурации компьютера выбирается подходящая материнская плата. Давайте рассмотрим основные характеристики и применение материнских плат.
+                    </p>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/AESTHETICS.jpg" auto="Motherboard" width="600" height="300">
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Характеристики </h3>
+
+                        <ol>
+                            <li>
+                                Форм-фактор:
+
+                                <ul>
+                                    <li>
+                                        ATX, Micro-ATX, Mini-ITX - определяют размеры и конфигурацию матплаты.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Сокет процессора:
+
+                                <ul>
+                                    <li>
+                                        Определяет, какой процессор можно установить на матплату (например, LGA1200 для Intel, AM4 для AMD).
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Чипсет:
+
+                                <ul>
+                                    <li>
+                                        Контролирует взаимодействие между процессором, памятью, PCI Express и другими устройствами.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Слоты расширения:
+
+                                <ul>
+                                    <li>
+                                        PCI Express для видеокарты, M.2 для SSD, PCI для старых устройств.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Память:
+
+                                <ul>
+                                    <li>
+                                        DIMM-слоты для установки оперативной памяти (RAM).
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Поддержка хранения данных:
+
+                                <ul>
+                                    <li>
+                                        SATA-порты для подключения жестких дисков и SSD, поддержка RAID.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Поддержка USB, Ethernet, аудио:
+
+                                <ul>
+                                    <li>
+                                        Интегрированные порты и контроллеры для подключения USB-устройств, сетевых адаптеров и аудиоустройств.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение материнских плат в различных сценариях </h3>
+
+                        <ol>
+                            <li>
+                                Домашний и офисный ПК:
+
+                                <ul>
+                                    <li>
+                                        ATX или Micro-ATX форм-факторы, достаточное количество USB-портов, поддержка Wi-Fi, если нужно.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Гейминг:
+
+                                <ul>
+                                    <li>
+                                        ATX или Micro-ATX, поддержка нескольких видеокарт через SLI или CrossFire, усиленное питание для процессора.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Работа с мультимедийным контентом:
+
+                                <ul>
+                                    <li>
+                                        Поддержка высококачественного аудио, M.2 слоты для быстрых SSD, достаточное количество PCI Express для видеообработки.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Серверные приложения:
+
+                                <ul>
+                                    <li>
+                                        E-ATX форм-фактор, поддержка множества слотов расширения и портов для сетевых адаптеров.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box gigabyte">
+                            <span></span>
+                            <div class="content">
+                                <h2>Gigabyte</h2>
+                                <a href="https://www.gigabyte.ru/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box asus">
+                            <span></span>
+                            <div class="content">
+                                <h2>ASUS</h2>
+                                <a href="https://www.asus.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box msi">
+                            <span></span>
+                            <div class="content">
+                                <h2>MSI</h2>
+                                <a href="https://ru.msi.com/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 align="center">Оперативная память (RAM)</h3>
+
+                    <p>
+                        Оперативная память (RAM) представляет собой важный компонент компьютера, используемый для временного хранения данных, к которым процессор имеет быстрый доступ. Выбор подходящей оперативной памяти зависит от требований приложений и конфигурации системы. Давайте рассмотрим основные характеристики и применение оперативной памяти в различных сценариях.
+                    </p>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/KINGSTON%20(2).jpg" auto="RAM" width="600" height="300">
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Характеристики </h3>
+
+                        <ol>
+                            <li>
+                                Тип памяти:
+
+                                <ul>
+                                    <li>
+                                        DDR4, DDR3, DDR2 - определяет поколение и скорость оперативной памяти.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Объем:
+
+                                <ul>
+                                    <li>
+                                        Определяет количество доступной оперативной памяти в гигабайтах (GB) или терабайтах (TB).
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Частота (скорость):
+
+                                <ul>
+                                    <li>
+                                        Измеряется в мегагерцах (MHz) или гигагерцах (GHz) - влияет на скорость передачи данных.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Тайминги:
+
+                                <ul>
+                                    <li>
+                                        CL (CAS Latency), tRCD, tRP, tRAS - определяют задержки доступа к данным в памяти.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Форм-фактор:
+
+                                <ul>
+                                    <li>
+                                        DIMM (Dual Inline Memory Module) - стандартный форм-фактор для настольных компьютеров, SO-DIMM (Small Outline DIMM) - для ноутбуков.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                ECC (Error-Correcting Code):
+
+                                <ul>
+                                    <li>
+                                        Дополнительная функция для исправления ошибок в памяти, часто используется в серверных системах.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение оперативной памяти в различных сценариях </h3>
+
+                        <ol>
+                            <li>
+                                Общее использование:
+
+                                <ul>
+                                    <li>
+                                        8GB или 16GB DDR4 с хорошей частотой подходят для повседневных задач и офисных приложений.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Гейминг:
+
+                                <ul>
+                                    <li>
+                                        16GB или 32GB DDR4 с высокой частотой обеспечат плавный запуск и выполнение требовательных игр.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Работа с мультимедийным контентом:
+
+                                <ul>
+                                    <li>
+                                        32GB или более оперативной памяти обеспечат комфортную работу с редактированием видео, графикой и 3D-моделями.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Серверные приложения:
+
+                                <ul>
+                                    <li>
+                                        Использование ECC памяти рекомендуется для обеспечения надежности данных в серверных сценариях.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box corsair">
+                            <span></span>
+                            <div class="content">
+                                <h2>Corsair</h2>
+                                <a href="https://www.corsair.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box kingston">
+                            <span></span>
+                            <div class="content">
+                                <h2>Kingston</h2>
+                                <a href="https://www.kingston.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box crucial">
+                            <span></span>
+                            <div class="content">
+                                <h2>Crucial</h2>
+                                <a href="https://www.crucial.com/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 align="center">Жесткий диск (HDD) и твердотельный накопитель (SSD)</h2>
+
+                    <p>
+                        Жесткий диск (HDD) и твердотельный накопитель (SSD) представляют собой устройства для хранения данных в компьютере. Каждый из них имеет свои особенности, преимущества и недостатки, что делает их подходящими для различных сценариев использования. Давайте рассмотрим основные характеристики и применение HDD и SSD.
+                    </p>
+
+                    <div>
+                        <h3 align="center"> HDD (Hard Disk Drive) </h3>
+
+                        <ol>
+                            <li>
+                                Объем хранения:
+
+                                <ul>
+                                    <li>
+                                        HDD обычно предоставляют больший объем хранения по сравнению с SSD за ту же цену.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Стоимость:
+
+                                <ul>
+                                    <li>
+                                        HDD более доступны с точки зрения цены за гигабайт.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Скорость передачи данных:
+
+                                <ul>
+                                    <li>
+                                        HDD имеют меньшую скорость передачи данных по сравнению с SSD.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Прочность:
+
+                                <ul>
+                                    <li>
+                                        Более устойчивы к физическим воздействиям, таким как удары и вибрации.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Громкость и энергопотребление:
+
+                                <ul>
+                                    <li>
+                                        HDD обычно более шумные и потребляют больше энергии по сравнению с SSD.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/HDD.jpg" auto="HDD" width="600" height="300">
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box western-digital">
+                            <span></span>
+                            <div class="content">
+                                <h2>Western Digital</h2>
+                                <a href="https://www.westerndigital.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box seagate">
+                            <span></span>
+                            <div class="content">
+                                <h2>Seagate</h2>
+                                <a href="https://www.seagate.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box toshiba">
+                            <span></span>
+                            <div class="content">
+                                <h2>Toshiba</h2>
+                                <a href="https://www.toshiba-storage.com/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> SSD (Solid State Drive) </h3>
+
+                        <ol>
+                            <li>
+                                Скорость передачи данных:
+
+                                <ul>
+                                    <li>
+                                        SSD обеспечивают высокую скорость чтения и записи данных, что делает их отличным выбором для ускорения работы системы.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Время доступа:
+
+                                <ul>
+                                    <li>
+                                        SSD имеют низкое время доступа к данным по сравнению с HDD.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Прочность:
+
+                                <ul>
+                                    <li>
+                                        Без движущихся частей, что делает их менее подверженными повреждениям от ударов.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Громкость и энергопотребление:
+
+                                <ul>
+                                    <li>
+                                        SSD бесшумны, и их энергопотребление ниже по сравнению с HDD.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Размер и вес:
+
+                                <ul>
+                                    <li>
+                                        SSD компактнее и легче, что важно для ноутбуков и ультрабуков.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/SSD.jpg" auto="SSD" width="600" height="300">
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box samsung">
+                            <span></span>
+                            <div class="content">
+                                <h2>Samsung</h2>
+                                <a href="https://www.samsung.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box sandisk">
+                            <span></span>
+                            <div class="content">
+                                <h2>Sandisk</h2>
+                                <a href="https://www.sandisk.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box crucial-ssd">
+                            <span></span>
+                            <div class="content">
+                                <h2>Crucial</h2>
+                                <a href="https://www.crucial.com/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение HDD и SSD в различных сценариях </h3>
+
+                        <ol>
+                            <li>
+                                Общее использование:
+
+                                <ul>
+                                    <li>
+                                        HDD - для хранения больших объемов данных, таких как мультимедийный контент и архивы.
+                                    </li>
+
+                                    <li>
+                                        SSD - для операционной системы и приложений, где требуется высокая скорость чтения и записи.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Гейминг:
+
+                                <ul>
+                                    <li>
+                                        HDD - для хранения больших игровых библиотек.
+                                    </li>
+
+                                    <li>
+                                        SSD - для ускорения загрузки игр и улучшения общей производительности.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Работа с мультимедийным контентом:
+
+                                <ul>
+                                    <li>
+                                        HDD - для хранения и редактирования больших файлов видео и изображений.
+                                    </li>
+
+                                    <li>
+                                        SSD - для быстрого доступа и редактирования проектов мультимедии.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Ноутбуки и ультрабуки:
+
+                                <ul>
+                                    <li>
+                                        SSD - для легкости, надежности и высокой производительности при мобильном использовании.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 align="center">Блок питания (Power Supply Unit - PSU)</h2>
+
+                    <p>
+                        Блок питания (PSU) - это устройство, обеспечивающее электроэнергией все компоненты компьютера. Выбор правильного блока питания важен для стабильной работы системы и защиты оборудования от перегрузок. Рассмотрим основные характеристики и применение блоков питания в различных сценариях.
+                    </p>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/PSU.jpg" auto="PSU" width="600" height="300">
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Характеристики </h3>
+
+                        <ol>
+                            <li>
+                                Мощность (Ватт):
+
+                                <ul>
+                                    <li>
+                                        Определяет общую энергию, которую блок питания может предоставить. Выбор зависит от требований компонентов.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Эффективность:
+
+                                <ul>
+                                    <li>
+                                        Измеряется в процентах, отражает, насколько эффективно блок преобразует электроэнергию в рабочее напряжение. Высокая эффективность важна для экономии электроэнергии.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Разъемы и кабели:
+
+                                <ul>
+                                    <li>
+                                        Различные разъемы и кабели для подключения к различным компонентам (материнская плата, видеокарта, накопители).
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Охлаждение:
+
+                                <ul>
+                                    <li>
+                                        Вентилятор(ы) для охлаждения блока питания и отведения тепла. Некоторые блоки имеют режим пассивного охлаждения при низкой загрузке.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Защиты:
+
+                                <ul>
+                                    <li>
+                                        Защита от перегрузок, короткого замыкания, перенапряжения и других аварийных ситуаций.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение блоков питания в различных сценариях </h3>
+
+                        <ol>
+                            <li>
+                                Общее использование:
+
+                                <ul>
+                                    <li>
+                                        Блоки мощностью от 500W до 750W подходят для большинства настольных компьютеров.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Гейминг:
+
+                                <ul>
+                                    <li>
+                                        Геймерские конфигурации могут требовать блоки питания от 750W и выше, особенно с учетом мощных видеокарт.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Работа с мультимедийным контентом:
+
+                                <ul>
+                                    <li>
+                                        Блок питания средней мощности достаточен для работы с мультимедийным контентом, если нет высокопроизводительных компонентов.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Серверные приложения:
+
+                                <ul>
+                                    <li>
+                                        Серверные системы требуют высокомощных блоков питания с функцией резервного питания (UPS).
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box corsair-psu">
+                            <span></span>
+                            <div class="content">
+                                <h2>Corsair</h2>
+                                <a href="https://www.corsair.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box evga-psu">
+                            <span></span>
+                            <div class="content">
+                                <h2>EVGA</h2>
+                                <a href="https://www.evga.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box seasonic-psu">
+                            <span></span>
+                            <div class="content">
+                                <h2>Seasonic</h2>
+                                <a href="https://seasonic.com/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 align="center">Корпус</h2>
+
+                    <p>
+                        Корпус ПК - это оболочка, обеспечивающая физическую защиту и организацию компонентов внутри компьютера. Выбор подходящего корпуса важен для удобства сборки, вентиляции и внешнего вида системы. Рассмотрим основные характеристики и применение корпусов в различных сценариях.
+                    </p>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/AEROCOOL.png" auto="AEROCOOL" width="600" height="300">
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Характеристики </h3>
+
+                        <ol>
+                            <li>
+                                Форм-фактор:
+
+                                <ul>
+                                    <li>
+                                        ATX, Micro-ATX, Mini-ITX - определяют размеры корпуса и его совместимость с материнской платой.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Конструкция и материал:
+
+                                <ul>
+                                    <li>
+                                        Сталь, алюминий, пластик - влияют на прочность, вес и внешний вид корпуса.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Количество отсеков для накопителей:
+
+                                <ul>
+                                    <li>
+                                        3.5" и 2.5" отсеки для установки жестких дисков и SSD.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Система охлаждения:
+
+                                <ul>
+                                    <li>
+                                        Количество и размеры мест для установки вентиляторов или систем жидкостного охлаждения.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Разъемы на передней панели:
+
+                                <ul>
+                                    <li>
+                                        USB, аудио разъемы, возможно наличие разъемов для быстрой зарядки устройств.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Прозрачные панели:
+
+                                <ul>
+                                    <li>
+                                        Окна из закаленного стекла или пластика для визуального отображения внутренних компонентов.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Кабель-менеджмент:
+
+                                <ul>
+                                    <li>
+                                        Возможность аккуратно проводить кабели для улучшения вентиляции и внешнего вида.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение корпусов в различных сценариях </h3>
+
+                        <ol>
+                            <li>
+                                Общее использование:
+
+                                <ul>
+                                    <li>
+                                        Стандартные корпусы ATX подходят для большинства настольных компьютеров.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Гейминг:
+
+                                <ul>
+                                    <li>
+                                        Геймерские корпуса с хорошей системой охлаждения, подсветкой и возможностью установки множества вентиляторов.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Работа с мультимедийным контентом:
+
+                                <ul>
+                                    <li>
+                                        Корпус с прозрачной панелью для демонстрации стильного внутреннего дизайна.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Серверные приложения:
+
+                                <ul>
+                                    <li>
+                                        Корпусы с возможностью установки большого количества жестких дисков и систем охлаждения.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box aerocool-case">
+                            <span></span>
+                            <div class="content">
+                                <h2>Aerocool</h2>
+                                <a href="https://www.aerocool.com.tw/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box nzxt-case">
+                            <span></span>
+                            <div class="content">
+                                <h2>NZXT</h2>
+                                <a href="https://www.nzxt.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box fractal-design-case">
+                            <span></span>
+                            <div class="content">
+                                <h2>Fractal Design</h2>
+                                <a href="https://www.fractal-design.com/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 align="center">Оптический привод (Optical Drive)</h2>
+
+                    <p>
+                        Оптический привод - это устройство для чтения и записи оптических дисков, таких как CD, DVD и Blu-ray. С развитием цифровых технологий и увеличением скорости интернета, использование оптических приводов сократилось, но они все еще могут быть полезными в некоторых сценариях. Рассмотрим основные характеристики и применение оптических приводов.
+                    </p>
+
+                    <div>
+                        <img class="guide-img" src="img/gallery/OPTICAL-DRIVE.png" auto="Optical drive" width="600" height="300">
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Характеристики </h3>
+
+                        <ol>
+                            <li>
+                                Типы дисков:
+
+                                <ul>
+                                    <li>
+                                        CD-ROM, DVD-ROM, DVD-RW, Blu-ray - различаются по объему данных, который они могут хранить и записывать.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Скорость записи и чтения:
+
+                                <ul>
+                                    <li>
+                                        Измеряется в многократном отношении к скорости чтения CD (например, 52x CD-ROM).
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Интерфейс:
+
+                                <ul>
+                                    <li>
+                                        SATA - наиболее распространенный интерфейс для подключения оптических приводов к материнской плате.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Форм-фактор:
+
+                                <ul>
+                                    <li>
+                                        5.25-дюймовый форм-фактор для настольных компьютеров.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Поддержка технологий:
+
+                                <ul>
+                                    <li>
+                                        Например, технология Lightscribe для прямой печати на дисках.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 align="center"> Применение оптических приводов в различных сценариях </h3>
+
+                        <ol>
+                            <li>
+                                Установка программ и операционных систем:
+
+                                <ul>
+                                    <li>
+                                        Загрузка и установка программ и операционных систем с установочных дисков.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Архивирование данных:
+
+                                <ul>
+                                    <li>
+                                        Запись больших объемов данных на DVD или Blu-ray для архивирования.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Создание медиа-контента:
+
+                                <ul>
+                                    <li>
+                                        Запись музыки, видео или фотографий на диски для воспроизведения на других устройствах.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Цифровой дизайн и производство:
+
+                                <ul>
+                                    <li>
+                                        Использование технологии Lightscribe для создания профессиональных надписей на дисках.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 align="center">Производители</h3>
+
+                    <div class="glassmorphism-cards">
+                        <div class="box lg-optical-drive">
+                            <span></span>
+                            <div class="content">
+                                <h2>LG</h2>
+                                <a href="https://www.lg.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box asus-optical-drive">
+                            <span></span>
+                            <div class="content">
+                                <h2>ASUS</h2>
+                                <a href="https://www.asus.com/">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="box sony-optical-drive">
+                            <span></span>
+                            <div class="content">
+                                <h2>Sony</h2>
+                                <a href="https://www.sony.com/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+    <div class="it-sidebar">
+        <sidebar>
+        </sidebar>
+    </div>
+    
+    <div class="it-aside">
+        <aside>
+        </aside>
+    </div>
+
+    <div class="it-footer">
+        <footer class="page-footer">
+            <div class="container">
+                <div class="sec aboutus">
+                    <h2>О нас</h2>
+                    <p>
+                        Команда энтузиастов, объединенных страстью к компьютерам и инновациям. Наш маленький уголок интернета посвящен миру компьютерных комплектующих, созданных специально для тех, кто видит в каждом детале не просто элемент, а возможность раскрыть потенциал своего устройства
+                    </p>
+
+                    <ul class="container_for_icons">
+                        <li><a href="https://www.youtube.com/watch?v=l6FBlQ29UG0"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://web.telegram.org/k/"><i class="fa fa-paper-plane"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quicklinks">
+                    <h2>Пользователям</h2>
+                    <ul>
+                        <li><a href="privacy-policy.html">Политика конфиденциальности</a></li>
+                        <li><a href="feedback.html">Форма обратной связи</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec contact">
+                    <h2>Контактная информация</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            Вернадского 86с1
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <a href="#">+7 908 324 14 74</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <a href="#">vladimir_namestnikov@vk.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyrightText">
+            Наместников Владимир Николаевич | ИКБО-20-22
+        </div>
+    </div>
+</body>
+</html>

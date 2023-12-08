@@ -1,0 +1,176 @@
+.large {
+    flex: 1 1 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+#about_main_card {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#about_line_card_holder {
+    flex: 1 1 100%;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+}
+
+.about_card_holder {
+    flex: 1 1 25%;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.info_card {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.info_card img {
+    z-index: 2;
+    object-fit: cover;
+    width: 80%;
+    height: 50%;
+
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.info_card .card_content {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info_card p {
+    position: relative;
+
+    text-align: left;
+
+    width: 85%;
+    font-family: 'Nunito', sans-serif;
+    color: var(--lightwhite);
+    font-size: 24px;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+
+    visibility: hidden;
+    opacity: 0%;
+    transition: all 0.5s ease-in-out;
+}
+
+.info_card::before {
+    content: '';
+    display: block;
+    visibility: hidden;
+    opacity: 0%;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(3, 14, 2) 10%, rgba(253, 255, 253, 0) 100%);
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+
+.about_card_holder:hover .info_card::before {
+    visibility: visible;
+    opacity: 100%;
+    width: 85%;
+}
+
+.about_card_holder:hover .info_card p {
+    visibility: visible;
+    opacity: 100%;
+}
+
+.about_card_holder:hover .info_card img {
+    box-shadow: 0px 5px 5px black;
+    width: 85%;
+}
+
+@media screen and (max-width: 700px)  {
+    .large {
+        flex-direction: column;
+    }
+
+    .info_card img {
+        width: 50%; 
+        height: auto;
+    }
+
+    .about_card_holder:hover .info_card::before {
+        visibility: visible;
+        opacity: 100%;
+        width: 60%;
+    }
+
+    .info_card::before {
+        content: '';
+        display: block;
+        visibility: hidden;
+        opacity: 0%;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background: linear-gradient(0deg, rgb(3, 14, 2) 10%, rgba(253, 255, 253, 0) 100%);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+    }
+
+    .about_card_holder:hover .info_card img {
+        box-shadow: 0px 5px 5px black;
+        width: 60%;
+    }
+
+    .info_card .card_content {
+        position: absolute;
+        bottom: 0;
+        width: 55%;
+    
+        left: 0;
+        right: 0;
+    
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

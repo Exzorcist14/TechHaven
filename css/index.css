@@ -1,0 +1,344 @@
+h3 {
+    background: #464646;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+.guide-img {
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.glassmorphism-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 0;
+}
+
+.box{
+    z-index: 100;
+}
+
+.content h2 {
+    background: none;
+}
+
+/*-----------------------------------------------------------*/
+
+.glassmorphism-cards .box {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin:40px 30px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.glassmorphism-cards .box::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+.glassmorphism-cards .box::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+}
+
+/*-----------------------------------------------------------*/
+
+.glassmorphism-cards .box:hover:before,
+.glassmorphism-cards .box:hover:after
+{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 135px);
+}
+
+/*-----------------------------------------------------------*/
+
+.glassmorphism-cards .box span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.glassmorphism-cards .box span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.glassmorphism-cards .box:hover span::before {
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.glassmorphism-cards .box span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation-delay: -1s;
+}
+
+.glassmorphism-cards .box:hover span::after {
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+@keyframes animate {
+    0%, 100%
+    {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*-----------------------------------------------------------*/
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.glassmorphism-cards .box .content {
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    color: #fff;
+    z-index: 10000;
+}
+
+.glassmorphism-cards .box:hover .content  {
+    left: -25px;
+    padding: 45px 40px;
+}
+
+.glassmorphism-cards .box .content a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------------*/
+
+.glassmorphism-cards .box.amd:before,
+.glassmorphism-cards .box.amd:after
+{
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.glassmorphism-cards .box.intel:before,
+.glassmorphism-cards .box.intel:after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.glassmorphism-cards .box.nvidia:before,
+.glassmorphism-cards .box.nvidia:after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.glassmorphism-cards .box.gigabyte:before,
+.glassmorphism-cards .box.gigabyte:after
+{
+    background: linear-gradient(315deg, #2196F3, #4CAF50);
+}
+
+.glassmorphism-cards .box.asus:before,
+.glassmorphism-cards .box.asus:after
+{
+    background: linear-gradient(315deg, #FF9800, #607D8B);
+}
+
+.glassmorphism-cards .box.msi:before,
+.glassmorphism-cards .box.msi:after
+{
+    background: linear-gradient(315deg, #FF5722, #9C27B0);
+}
+
+.glassmorphism-cards .box.corsair:before,
+.glassmorphism-cards .box.corsair:after
+{
+    background: linear-gradient(315deg, #FF4500, #FFD700);
+}
+
+.glassmorphism-cards .box.kingston:before,
+.glassmorphism-cards .box.kingston:after
+{
+    background: linear-gradient(315deg, #007BFF, #00FF00);
+}
+
+.glassmorphism-cards .box.crucial:before,
+.glassmorphism-cards .box.crucial:after
+{
+    background: linear-gradient(315deg, #0000FF, #FF1493);
+}
+
+.glassmorphism-cards .box.western-digital:before,
+.glassmorphism-cards .box.western-digital:after
+{
+    background: linear-gradient(315deg, #0000FF, #00FF00);
+}
+
+.glassmorphism-cards .box.seagate:before,
+.glassmorphism-cards .box.seagate:after
+{
+    background: linear-gradient(315deg, #FF4500, #FFD700);
+}
+
+.glassmorphism-cards .box.toshiba:before,
+.glassmorphism-cards .box.toshiba:after
+{
+    background: linear-gradient(315deg, #FF9800, #607D8B);
+}
+
+.glassmorphism-cards .box.samsung:before,
+.glassmorphism-cards .box.samsung:after
+{
+    background: linear-gradient(315deg, #2196F3, #4CAF50);
+}
+
+.glassmorphism-cards .box.sandisk:before,
+.glassmorphism-cards .box.sandisk:after
+{
+    background: linear-gradient(315deg, #FF5722, #9C27B0);
+}
+
+.glassmorphism-cards .box.crucial-ssd:before,
+.glassmorphism-cards .box.crucial-ssd:after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.glassmorphism-cards .box.corsair-psu:before,
+.glassmorphism-cards .box.corsair-psu:after
+{
+    background: linear-gradient(315deg, #FF4500, #FFD700);
+}
+
+.glassmorphism-cards .box.evga-psu:before,
+.glassmorphism-cards .box.evga-psu:after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.glassmorphism-cards .box.seasonic-psu:before,
+.glassmorphism-cards .box.seasonic-psu:after
+{
+    background: linear-gradient(315deg, #007BFF, #00FF00);
+}
+
+.glassmorphism-cards .box.nzxt-case:before,
+.glassmorphism-cards .box.nzxt-case:after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.glassmorphism-cards .box.fractal-design-case:before,
+.glassmorphism-cards .box.fractal-design-case:after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.glassmorphism-cards .box.aerocool-case:before,
+.glassmorphism-cards .box.aerocool-case:after
+{
+    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #0080ff, #0000ff);
+}
+
+.glassmorphism-cards .box.lg-optical-drive:before,
+.glassmorphism-cards .box.lg-optical-drive:after
+{
+    background: linear-gradient(315deg, #FF1493, #FF69B4);
+}
+
+.glassmorphism-cards .box.asus-optical-drive:before,
+.glassmorphism-cards .box.asus-optical-drive:after
+{
+    background: linear-gradient(315deg, #FF9800, #607D8B);
+}
+
+.glassmorphism-cards .box.sony-optical-drive:before,
+.glassmorphism-cards .box.sony-optical-drive:after
+{
+    background: linear-gradient(315deg, #0000FF, #FF1493);
+}
+
+/*-----------------------------------------------------------*/
+
+@media screen and (max-width: 550px) {
+    h3 {
+        font-size: 20px;
+    }
+}

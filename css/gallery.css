@@ -1,0 +1,57 @@
+.gal {
+    color: #212121;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.gal > div {
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.gal img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 25px;
+}
+
+.gal > div:hover {
+    transform: scale(102.5%);
+}
+
+.gallery-card-1 {
+    grid-row: span 2;
+}
+
+.gallery-card-3 {
+    grid-row: span 2;
+}
+
+.gallery-card-5 {
+    grid-column: span 2;
+}
+
+.gallery-card-10 {
+    grid-column: span 3;
+}
+
+.gallery-card-14 {
+    grid-column: span 2;
+}
+
+.gallery-card-17 {
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 800px) {
+    .gal {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
