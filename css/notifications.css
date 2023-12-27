@@ -82,14 +82,7 @@
 
 @media screen and (max-width: 500px) {
     .toggle:checked ~ .notifications-list {
-        right: -150px;
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .toggle:checked ~ .notifications-list {
-        right: -145px;
+        right: -80px;
         width: 300px;
     }
 }
